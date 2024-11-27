@@ -19,4 +19,4 @@ spec:
       - name: k8
         image: anil132/k8s
         ports:
-        - containerPort: 80
+        - containerPort: 90
