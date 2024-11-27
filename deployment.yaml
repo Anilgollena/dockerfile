@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: wordpress-deployment
+  name: ecomm-deployment
   labels: 
-    app: wordpress-app
+    app: ecomm-app
     tier: frontend
 spec:
   replicas: 4
@@ -16,7 +16,7 @@ spec:
         tier: frontend
     spec:
       containers:
-      - name: k8
+      - name: nginx
         image: anil132/k8s
         ports:
-        - containerPort: 90
+        - containerPort: 80
